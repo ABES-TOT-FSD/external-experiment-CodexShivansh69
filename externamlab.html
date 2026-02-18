@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Navigation Grid</title>
+<style>
+  .box {
+    width: 900px;
+    border: 2px solid black;
+    margin: 40px auto;
+  }
+
+  .header {
+    background: hsl(0, 8%, 83%);
+    text-align: center;
+    padding: 10px;
+  }
+
+  .header span {
+    color: red;
+    font-weight: bold;
+  }
+
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .nav div {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+  }
+
+  .blue { background: #b9ddff; }
+  .green { background: #b8f7b8; }
+
+</style>
+</head>
+
+<body>
+
+<div class="box">
+  <div class="header">
+    My <span>Website</span> Navigation
+  </div>
+
+  <div class="nav">
+    <div class="blue">Home</div>
+    <div class="blue">About</div>
+    <div class="blue">Services</div>
+    <div class="blue">Contact</div>
+    <div class="green">Dashboard</div>
+    <div class="green">Profile</div>
+    <div class="green">Messages</div>
+    <div class="green">Logout</div>
+  </div>
+</div>
+
+</body>
+</html>
